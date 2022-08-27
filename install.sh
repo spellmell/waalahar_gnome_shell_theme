@@ -85,8 +85,21 @@ setup (){
   cp ./setup/gnome-shell_PATRON_.css ./temp/gnome-shell/gnome-shell.css
   sed -i "s/_WAALAHARTHEME_/waalahar_$1/g" ./waalahar.dconf
   sed -i "s/(_PRIMARY_COLOR_)/($1)/g" ./temp/gnome-shell/gnome-shell.css
-  sed -i "s/#8a0000/\#$2/g" ./temp/gnome-shell/assets/grad_bg_overview.svg
-  sed -i "s/#8a0000/\#$2/g" ./temp/gnome-shell/assets/grad_bg_popups.svg
+  if [ $1 != "default" ];
+  then
+    sed -i "s/#ff6600/$2/g" ./temp/gnome-shell/assets/grad_bg_overview.svg
+    sed -i "s/#ff6600/$2/g" ./temp/gnome-shell/assets/grad_bg_popups.svg
+    sed -i "s/#ff0000/$2/g" ./temp/gnome-shell/assets/grad_bg_overview.svg
+    sed -i "s/#ff0000/$2/g" ./temp/gnome-shell/assets/grad_bg_popups.svg
+    if [[ ${2::1} == "#" ]];
+    then
+      sed -i "s/_ACTIVE_TEXT_COLOR_BUTTON_/$2/g" ./temp/gnome-shell/gnome-shell.css
+    else
+      sed -i "s/_ACTIVE_TEXT_COLOR_BUTTON_/\#$2/g" ./temp/gnome-shell/gnome-shell.css
+    fi
+  else
+    sed -i "s/_ACTIVE_TEXT_COLOR_BUTTON_/orangered/g" ./temp/gnome-shell/gnome-shell.css
+  fi
 }
 
 declare -F moving
@@ -166,7 +179,7 @@ fi
   fi
 ;;
 -u)
-  # rm -Rf $ROUTE/waalahar_*
+  rm -Rf $ROUTE/waalahar_*
   notify-send "All Waalahar themes have been uninstalled." -i "gnome-logo-text-dark"
 ;;
 *)
