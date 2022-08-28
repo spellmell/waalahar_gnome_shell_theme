@@ -5,6 +5,7 @@
 # Customization by Spellmell
 # spellmell.github.io
 # spellmell@protonmail.com
+# CC BY-NC-SA
 # 8/27/2022
 
 # https://github.com/spellmell/waalahar_gnome_shell_theme

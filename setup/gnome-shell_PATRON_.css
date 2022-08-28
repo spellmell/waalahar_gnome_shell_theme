@@ -1,9 +1,11 @@
-/* Waalahar (_PRIMARY_COLOR_) theme for Gnome 42.*^
+/* Waalahar (_PRIMARY_COLOR_) theme for Gnome 42.*^ 
 # Version: 1.0.1
 # Customization by Spellmell
 # spellmell.github.io
 # spellmell@protonmail.com
+# CC BY-NC-SA
 # 8/27/2022
+
 # https://github.com/spellmell/waalahar_gnome_shell_theme
 */
 
@@ -475,7 +477,7 @@ StScrollBar {
   min-width: 12em !important; /* fix menu de aplicaciones */
   max-width: 24em !important;
   min-height: 1.8em;
-  max-height: 1.8em;
+  max-height: 2em;
   padding: 6px;
   spacing: 0px;
   border-radius: 3px;
@@ -527,13 +529,13 @@ StScrollBar {
 
 .popup-menu-arrow,
 .popup-menu-icon { /* iconos extraer unidades en places */
-  /* cursor: pointer; */
-  padding: 2px 4px;
+  padding: 0 4px;
+  margin: 0;
   color: rgba(245, 222, 179, 1);
-  border-radius: 72px !important;
-  /* border: solid 1px rgba(245, 222, 179, 0.54); */
-  background-color: _PRIMARY_COLOR_ 1) !important;
-  /* box-shadow: 0 0 12px rgba(0, 0, 0, 0.18); */
+  /* border-radius: 72px !important;
+  border: solid 1px _PRIMARY_COLOR_ 0.18) !important;
+  background-color: _PRIMARY_COLOR_ 0.54) !important;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.72); */
   /* solution a bug in places menu = reduce icon-size. si da problemas bajar a 18px */
   icon-size: 16px !important; /* iconos en menus (no apps), extensiones shutdown, etc */
   -st-icon-style: symbolic !important;
@@ -662,7 +664,6 @@ StScrollBar {
   border-radius: 3px;
   background-color: rgba(30, 30, 30, 0.81);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.36) !important;
-  /* visibility: collapse !important; */
 }
   .datemenu-today-button:insensitive {
     color: rgba(245, 222, 179, 1);
