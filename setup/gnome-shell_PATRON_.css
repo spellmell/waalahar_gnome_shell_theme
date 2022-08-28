@@ -553,7 +553,7 @@ StScrollBar {
     .popup-sub-menu .popup-menu-item:last-child {
       border-radius: 3px; }
     .popup-sub-menu .popup-menu-item:focus, .popup-sub-menu .popup-menu-item:hover {
-      color: _PRIMARY_COLOR_ 1); 
+      color: rgba(30, 30, 30, 1); 
       background-color: rgba(245, 222, 179, 0.72) !important;
       text-shadow: 0 0 3px rgba(245, 222, 179, 0.18);
     }
