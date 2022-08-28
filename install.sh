@@ -100,6 +100,7 @@ setup (){
       sed -i "s/#ff0000/$2/g" ./temp/gnome-shell/assets/grad_bg_panel.svg
       sed -i "s/#ff0000/$2/g" ./temp/gnome-shell/assets/grad_bg_button.svg
       # sed -i "s/#ff0000/$2/g" ./temp/gnome-shell/assets/grad_bg_button_hover.svg
+      sed -i "s/#d45500/$2/g" ./temp/gnome-shell/assets/toggle-on-light.svg
     else
       # random colors
       sed -i "s/_ACTIVE_TEXT_COLOR_BUTTON_/\#$2/g" ./temp/gnome-shell/gnome-shell.css
@@ -113,6 +114,7 @@ setup (){
       sed -i "s/#ff0000/\#$2/g" ./temp/gnome-shell/assets/grad_bg_panel.svg
       sed -i "s/#ff0000/\#$2/g" ./temp/gnome-shell/assets/grad_bg_button.svg
       # sed -i "s/#ff0000/\#$2/g" ./temp/gnome-shell/assets/grad_bg_button_hover.svg
+      sed -i "s/#d45500/\#$2/g" ./temp/gnome-shell/assets/toggle-on-light.svg
     fi
   else
     sed -i "s/_ACTIVE_TEXT_COLOR_BUTTON_/orangered/g" ./temp/gnome-shell/gnome-shell.css

@@ -383,15 +383,16 @@ StEntry {
 /* Switches */
 .toggle-switch {
   color: rgba(245, 222, 179, 1);
-  height: 26px;
-  width: 48px;
+  /* width: 85px; */
+  /* height: 40px; */
   margin: 6px;
-  border-radius: 72px !important;
-  border: solid 4px _PRIMARY_COLOR_ 1) !important;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.18);
+  /* border-radius: 72px !important; */
+  /* border: solid 4px _PRIMARY_COLOR_ 1) !important; */
   background-size: contain;
-  background-image: url("resource:///org/gnome/shell/theme/toggle-off-light.svg"); }
+  background-image: url("assets/toggle-off-light.svg"); }
   .toggle-switch:checked {
-    background-image: url("resource:///org/gnome/shell/theme/toggle-on-light.svg"); }
+    background-image: url("assets/toggle-on-light.svg"); }
 
 /* Slider */
 .slider { /* control del volumen */
