@@ -398,6 +398,9 @@ StEntry {
   height: 12px;
   color: _PRIMARY_COLOR_ 1);
   margin: 18px 0px;
+  -slider-handle-radius: 12px;
+  -slider-handle-border-color: rgba(245, 222, 179, 0.81);
+  -slider-handle-border-width: 6px;
   -barlevel-height: 36px;
   -barlevel-background-color: rgba(30, 30, 30, 1); 
   -barlevel-border-width: 18px;
@@ -408,9 +411,7 @@ StEntry {
   -barlevel-overdrive-color: transparent;
   -barlevel-overdrive-border-color: _PRIMARY_COLOR_ 1); 
   -barlevel-overdrive-separator-width: 3px;
-  -slider-handle-radius: 12px;
-  -slider-handle-border-width: 6px;
-  -slider-handle-border: solid 6px green; }
+  }
 
 /* Scrollbars */
 StScrollView.vfade {
@@ -519,10 +520,10 @@ StScrollBar {
     color: rgba(245, 222, 179, 1); }
 
 .popup-menu-arrow,
-.popup-menu-icon {
-  padding: 6px;
+.popup-menu-icon { /* iconos extraer unidades en places */
+  padding: 6px 18px;
   color: rgba(245, 222, 179, 1);
-  border-radius: 3px;
+  border-radius: 3px !important;
   background-color: transparent !important;
   /* box-shadow: 0 0 12px rgba(0, 0, 0, 0.18); */
   /* solution a bug in places menu = reduce icon-size. si da problemas bajar a 18px */
@@ -1815,7 +1816,7 @@ StScrollBar {
   font-size: 18pt;
   font-weight: 700;
   border-radius: 72px; /* cerrar ventana de aplicacion en overview */
-  border: solid 3px rgba(245, 222, 179, 0.54);
+  border: solid 6px rgba(245, 222, 179, 0.54);
   background-color: _PRIMARY_COLOR_ 1);
   box-shadow: 0 0 6px _PRIMARY_COLOR_ 0.81),
               0 0 6px rgba(0, 0, 0, 0.81); 
@@ -1824,10 +1825,8 @@ StScrollBar {
     icon-size: 36px; }
   .window-close:hover, .screenshot-ui-close-button:hover {
     transition-duration: 600ms;
-    /* width: 56px;
-    height: 56px; */
     color: rgba(30, 30, 30, 0.81);
-    border: solid 3px _PRIMARY_COLOR_ 1);
+    border: solid 6px _PRIMARY_COLOR_ 1);
     background-color: rgba(245, 222, 179, 1);
     box-shadow: inset 0 0 6px _PRIMARY_COLOR_ 0.81),
                 0 0 6px rgba(0, 0, 0, 0.81); }
