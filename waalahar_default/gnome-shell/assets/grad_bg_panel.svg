@@ -26,8 +26,8 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="0.4546875"
-     inkscape:cx="1249.2096"
-     inkscape:cy="95.670103"
+     inkscape:cx="1264.6048"
+     inkscape:cy="18.694158"
      inkscape:window-width="1920"
      inkscape:window-height="1000"
      inkscape:window-x="0"
@@ -199,10 +199,11 @@
   <g
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     sodipodi:insensitive="true">
     <path
        sodipodi:type="star"
-       style="font-variation-settings:'wght' 900;opacity:0.81;fill:url(#radialGradient23569);fill-opacity:1;stroke:#f2f2f2;stroke-width:40.65541461;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke-dasharray:none;paint-order:stroke markers fill"
+       style="font-variation-settings:'wght' 900;opacity:0.81;fill:url(#radialGradient23569);fill-opacity:1;stroke:#f2f2f2;stroke-width:40.6554;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke-dasharray:none;paint-order:stroke markers fill"
        id="path1714"
        inkscape:flatsided="false"
        sodipodi:sides="5"
@@ -218,5 +219,12 @@
        inkscape:transform-center-x="-0.047214609"
        inkscape:transform-center-y="-16.780375"
        transform="matrix(0.46597447,-0.04927238,0.04927238,0.46597447,246.06652,63.324998)" />
+    <ellipse
+       style="display:inline;opacity:0.12;mix-blend-mode:normal;fill:#ffffff;fill-opacity:0.721569;stroke:#4d4d4d;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke-dasharray:none;paint-order:stroke markers fill"
+       id="path321"
+       cx="338.66666"
+       cy="2.796602"
+       rx="319.504"
+       ry="5.1408982" />
   </g>
 </svg>
