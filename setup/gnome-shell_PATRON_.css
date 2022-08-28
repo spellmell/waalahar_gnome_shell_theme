@@ -81,7 +81,7 @@ stage {
 .modal-dialog { /* dialogos emergentes cerrar, apagar, etc */
   font-family: "Silkscreen" !important;
   color: rgba(245, 222, 179, 1);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 10pt;
   background-color: rgba(30, 30, 30, 0.81)  ;
   background-image: url('assets/grad_bg_popups.svg');
@@ -226,44 +226,44 @@ stage {
 /* General Typography */
 .app-folder-dialog .folder-name-container .folder-name-label, .app-folder-dialog .folder-name-container .folder-name-entry, .search-statustext {
   font-family: "Silkscreen" !important;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18pt; }
 
 .lg-debug-flags-header, .message-dialog-content .message-dialog-title, .message-list .message-list-placeholder, .datemenu-today-button .date-label {
   font-family: "Silkscreen" !important;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14pt; }
 
 .nm-dialog-airplane-headline {
   font-family: "Silkscreen" !important;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16pt; }
 
 .message-dialog-content .message-dialog-title.lightweight, .headline {
   font-family: "Silkscreen" !important;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 12pt; }
 
 .lg-extension-name, .osd-window, .nm-dialog-header, .dialog-list .dialog-list-title, .message-list-controls, .weather-button .weather-forecast-temp, .weather-button .weather-header, .world-clocks-button .world-clocks-time, .world-clocks-button .world-clocks-header, .events-button .events-title, .calendar .calendar-month-header .calendar-month-label, .datemenu-today-button .day-label, .popup-menu-ornament {
   font-family: "Silkscreen" !important;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 12pt; }
 
 .app-menu .popup-inactive-menu-item:first-child > StLabel {
   font-family: "Silkscreen" !important;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 10pt; }
 
 .login-dialog-not-listed-label, .lg-completions-text, .caps-lock-warning-label, #dash, .icon-label-button-container, .prompt-dialog-error-label,
 .prompt-dialog-info-label,
 .prompt-dialog-null-label, .run-dialog .run-dialog-description, .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description, .weather-button .weather-forecast-time, .world-clocks-button .world-clocks-timezone, .events-button .event-time {
   font-family: "Silkscreen" !important;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 10pt; }
 
 .calendar .calendar-day-base.calendar-day-heading, .calendar .calendar-day-base {
   font-family: "Silkscreen" !important;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 10pt; }
 
 .unlock-dialog-clock-time, #panel, .weather-button .weather-forecast-time, .world-clocks-button .world-clocks-timezone, .world-clocks-button .world-clocks-time, .events-button .event-time, .calendar .calendar-day-base {
@@ -291,7 +291,7 @@ StEntry {
   text-align: center;
   color: rgba(245, 222, 179, 1);
   font-size: 16pt;
-  font-weight: 300;
+  font-weight: 400;
   background-color: rgba(30, 30, 30, 0.81);
   border-radius: 3px !important;
   border: solid 1px _PRIMARY_COLOR_ 0.54); 
@@ -306,7 +306,7 @@ StEntry {
     /* input buscador hover */
     color: rgba(245, 222, 179, 1);
     font-size: 16pt;
-    font-weight: 300;
+    font-weight: 400;
     background-color: rgba(30, 30, 30, 0.81);
     border-radius: 3px;
     border: solid 1px _PRIMARY_COLOR_ 0.54); 
@@ -319,7 +319,7 @@ StEntry {
     /* input en modal */
     color: rgba(245, 222, 179, 1);
     font-size: 16pt;
-    font-weight: 300;
+    font-weight: 400;
     background-color: rgba(30, 30, 30, 0.81);
     border-radius: 3px;
     border: solid 1px _PRIMARY_COLOR_ 0.54); 
@@ -331,7 +331,7 @@ StEntry {
   StEntry:insensitive {
     color: rgba(245, 222, 179, 1);
     font-size: 16pt;
-    font-weight: 300;
+    font-weight: 400;
     background-color: rgba(30, 30, 30, 0.81);
     border-radius: 3px;
     border: solid 1px _PRIMARY_COLOR_ 0.54); 
@@ -460,7 +460,7 @@ StScrollBar {
   font-family: "Silkscreen" !important;
   color: rgba(245, 222, 179, 1);
   font-size: 10pt;
-  font-weight: 300;
+  font-weight: 400;
   background-color: rgba(30, 30, 30, 0.88)  ;
   background-image: url('assets/grad_bg_popups.svg');
   border-radius: 3px;
@@ -475,9 +475,12 @@ StScrollBar {
   transition: 0.2s all ease;
   min-width: 12em !important; /* fix menu de aplicaciones */
   max-width: 24em !important;
+  min-height: 1.8em;
+  max-height: 1.8em;
   padding: 6px;
   spacing: 0px;
   border-radius: 3px;
+  border: solid 1px _PRIMARY_COLOR_ 0.0) !important;
   background-color: transparent; }
   .popup-menu-item:ltr {
     padding-left: 6px; }
@@ -485,8 +488,12 @@ StScrollBar {
     padding-right: 6px; }
   .popup-menu-item:focus, .popup-menu-item:hover {
     color: rgba(245, 222, 179, 1);
-    background-color: _PRIMARY_COLOR_ 0.72) !important; }
+    border: solid 1px _PRIMARY_COLOR_ 0.72) !important;
+    background-color: _PRIMARY_COLOR_ 0.72) !important; 
+    background-image: url('assets/grad_bg_button_hover.svg') !important;
+  }
     .popup-menu-item:focus:active, .popup-menu-item:hover:active {
+      border: solid 1px _PRIMARY_COLOR_ 0.72) !important;
       background-color: _PRIMARY_COLOR_ 1) !important; }
   .popup-menu-item:checked {
     background-color: _PRIMARY_COLOR_ 1) !important; }
@@ -547,11 +554,14 @@ StScrollBar {
       border-radius: 3px; }
     .popup-sub-menu .popup-menu-item:focus, .popup-sub-menu .popup-menu-item:hover {
       color: _PRIMARY_COLOR_ 1); 
-      background-color: rgba(245, 222, 179, 0.72) !important; }
+      background-color: rgba(245, 222, 179, 0.72) !important;
+      text-shadow: 0 0 3px rgba(245, 222, 179, 0.18);
+    }
     .popup-sub-menu .popup-menu-item:checked {
       background-color: _PRIMARY_COLOR_ 1) !important; }
       .popup-sub-menu .popup-menu-item:checked:focus, .popup-sub-menu .popup-menu-item:checked:hover {
-        background-color: _PRIMARY_COLOR_ 1) !important; }
+        background-color: _PRIMARY_COLOR_ 1) !important; 
+        text-shadow: 0 0 3px rgba(245, 222, 179, 0.18);}
     .popup-sub-menu .popup-menu-item:active {
       background-color: rgba(245, 222, 179, 0.72) !important; }
   .popup-sub-menu .popup-menu-section .popup-menu-item:last-child:hover, .popup-sub-menu .popup-menu-section .popup-menu-item:last-child:focus {
@@ -708,7 +718,7 @@ StScrollBar {
   .calendar .calendar-month-header .calendar-month-label {
     color: rgba(245, 222, 179, 1);
     font-size: 12pt;
-    font-weight: 300;
+    font-weight: 400;
     padding: 8px 0; }
   .calendar .calendar-month-header .pager-button {
     height: 36px;
@@ -755,7 +765,7 @@ StScrollBar {
       color: rgba(245, 222, 179, 1);
       padding-top: 6px;
       height: 16px !important;
-      font-weight: 500; }
+      font-weight: 400; }
   .calendar .calendar-nonwork-day {
     color: _PRIMARY_COLOR_ 1); }
   .calendar .calendar-other-month-day {
@@ -783,7 +793,7 @@ StScrollBar {
     background-size: contain; }
   .calendar .calendar-week-number {
     font-size: 8pt;
-    font-weight: 300;
+    font-weight: 400;
     font-feature-settings: "tnum";
     margin: 6px;
     padding: 0 6px;
@@ -822,7 +832,7 @@ StScrollBar {
     spacing: 12px; }
   .events-button .events-title { /* titulos eventos agenda */
     font-size: 12pt;
-    font-weight: 500;
+    font-weight: 400;
     color: rgba(245, 222, 179, 1);
     background-color: _PRIMARY_COLOR_ 1); 
     border-radius: 3px;
@@ -865,7 +875,7 @@ StScrollBar {
     margin: 6px;
     padding: 6px;
     font-size: 12pt;
-    font-weight: 500;
+    font-weight: 400;
     color: rgba(245, 222, 179, 1);
     background-color: _PRIMARY_COLOR_ 1);
     border-radius: 3px;
@@ -873,7 +883,7 @@ StScrollBar {
   .world-clocks-button .world-clocks-city, .world-clocks-button .world-clocks-time, .world-clocks-button .world-clocks-timezone {
     padding: 0px 6px;
     font-size: 10pt;
-    font-weight: 300;
+    font-weight: 400;
     color: rgba(245, 222, 179, 1); }
     .world-clocks-button .world-clocks-time:ltr {
       text-align: right; }
@@ -887,7 +897,7 @@ StScrollBar {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.18);
   color: rgba(245, 222, 179, 1);
   font-size: 10pt;
-  font-weight: 300;
+  font-weight: 400;
   background-color: rgba(30, 30, 30, 0.81);
   padding: 6px; }
   .weather-button:focus {
@@ -917,7 +927,7 @@ StScrollBar {
     background-color: _PRIMARY_COLOR_ 1);}
   .weather-button .weather-header {
     font-size: 12pt;
-    font-weight: 500;
+    font-weight: 400;
     color: rgba(245, 222, 179, 1); }
     .weather-button .weather-header.location {
       font-weight: normal; }
@@ -1034,17 +1044,17 @@ StScrollBar {
   .message .message-title { /* en alertas del reloj*/
     color: rgba(245, 222, 179, 1);
     font-size: 12pt;
-    font-weight: 500;
+    font-weight: 400;
     /* HACK: the label should be baseline-aligned with a 1em label, fake this with some bottom padding */
     padding-top: 0.56em; }
   .message .message-secondary-bin {
     font-size: 10pt;
-    font-weight: 300;
+    font-weight: 400;
     padding: 0 8px; }
     .message .message-secondary-bin > .event-time {
       color: rgba(245, 222, 179, 1) !important;
       font-size: 8pt;
-      font-weight: 300;
+      font-weight: 400;
       /* HACK: the label should be baseline-aligned with a 1em label, fake this with some bottom padding */
       padding-bottom: 0.12em; }
       .message .message-secondary-bin > .event-time:ltr {
@@ -1157,7 +1167,7 @@ StScrollBar {
   min-height: 64px;
   width: 34em;
   color: rgba(245, 222, 179, 1);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 10pt;
   background-color: rgba(30, 30, 30, 0.81)  ;
   background-image: url('assets/grad_bg_popups.svg');
@@ -1174,7 +1184,7 @@ StScrollBar {
 .summary-source-counter {
   font-family: "Silkscreen" !important;
   font-size: 10pt;
-  font-weight: 300;
+  font-weight: 400;
   height: 1.6em;
   width: 1.6em;
   -shell-counter-overlap-x: 3px;
@@ -1686,10 +1696,11 @@ StScrollBar {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.72);
   }
   #panel .panel-button {
+    background-image: url('assets/grad_bg_button.svg');
     font-family: "Righteous" !important; /* _FONT_BUTTONS_ */
     min-width: 3em !important;
     max-height: 2em !important;
-    font-weight: 500;
+    font-weight: 400;
     color: rgba(245, 222, 179, 1);
     -natural-hpadding: 3px;
     -minimum-hpadding: 3px;
@@ -2858,7 +2869,7 @@ StScrollBar {
 .unlock-dialog-clock {
   font-family: "Silkscreen" !important;
   color: rgba(245, 222, 179, 1);
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   spacing: 24px;
   padding-bottom: 2.5em; }
@@ -2945,7 +2956,7 @@ StScrollBar {
       color: rgba(245, 222, 179, 1);
       font-size: 11pt !important;
       font-family: "Righteous" !important; /* _FONT_BUTTONS_ */
-      font-weight: 500;
+      font-weight: 400;
       background-color: _PRIMARY_COLOR_ 0.54); /* color buttons */
     }
   #panel .panel-button, #panel.solid .panel-button {
@@ -2957,7 +2968,7 @@ StScrollBar {
     margin: 3px 1px;
     font-size: 11pt !important;
     font-family: "Righteous" !important; /* _FONT_BUTTONS_ */
-    font-weight: 500;
+    font-weight: 400;
     color: rgba(245, 222, 179, 1);
     background-color: _PRIMARY_COLOR_ 0.54); /* color buttons */
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
@@ -2977,8 +2988,8 @@ StScrollBar {
     #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked, #panel.solid .panel-button:active, #panel.solid .panel-button:overview, #panel.solid .panel-button:focus, #panel.solid .panel-button:checked {
       color: _ACTIVE_TEXT_COLOR_BUTTON_; /* active text color in buttons  */
       border-radius: 3px;
-      background-color: rgba(44, 49, 60, 0.54);
-      box-shadow: none; }
+      background-color: rgba(44, 49, 60, 1);
+      background-image: none; } 
       #panel .panel-button:active > .system-status-icon, #panel .panel-button:overview > .system-status-icon, #panel .panel-button:focus > .system-status-icon, #panel .panel-button:checked > .system-status-icon, #panel.solid .panel-button:active > .system-status-icon, #panel.solid .panel-button:overview > .system-status-icon, #panel.solid .panel-button:focus > .system-status-icon, #panel.solid .panel-button:checked > .system-status-icon {
         icon-shadow: none; }
     #panel .panel-button .app-menu-icon, #panel.solid .panel-button .app-menu-icon {
@@ -3008,7 +3019,7 @@ StScrollBar {
 }
   #appMenu .panel-status-menu-box { /* boton aplicacion seleccionada en el panel */
     font-family: "Righteous" !important; /* _FONT_BUTTONS_ */
-    font-weight: 500;
+    font-weight: 400;
     /* margin: 6px; */
     /* padding: 6px; */
     /* border-radius: 3px; */

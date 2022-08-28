@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="600"
+   height="48"
+   viewBox="0 0 158.75 12.7"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="grad_bg_button_hover.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1.355288"
+     inkscape:cx="185.20049"
+     inkscape:cy="22.504442"
+     inkscape:window-width="1920"
+     inkscape:window-height="1000"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="0,12.7"
+       orientation="0,600"
+       id="guide10317"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="158.75,12.7"
+       orientation="48,0"
+       id="guide10319"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="158.75,0"
+       orientation="0,-600"
+       id="guide10321"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="-48,0"
+       id="guide10323"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8003">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7999" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop8001" />
+    </linearGradient>
+    <rect
+       x="3.655061"
+       y="1.2049253"
+       width="2557.3508"
+       height="1596.3871"
+       id="rect10599" />
+    <rect
+       x="2.4856317"
+       y="0.14945652"
+       width="2560.9019"
+       height="1595.442"
+       id="rect7980" />
+    <rect
+       x="-3.9871264"
+       y="0.51671195"
+       width="2565.843"
+       height="1599.6774"
+       id="rect7974" />
+    <linearGradient
+       id="linearGradient63720"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop63718" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient62224"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop62222" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect2122"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Utilice la regla de relleno parimpar en el diálogo &lt;b&gt;Relleno y borde&lt;/b&gt; si el resultado no está aplanada después de convertir el recorte en trayectos." />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2118">
+      <circle
+         style="display:none;opacity:1;fill:#ff0066;fill-opacity:0.721569;stroke:none;stroke-width:4.7625;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="circle2120"
+         cx="338.66666"
+         cy="141.81763"
+         r="266.19641" />
+    </clipPath>
+    <filter
+       inkscape:label="Torn Edges"
+       inkscape:menu="Distort"
+       inkscape:menu-tooltip="Displace the outside of shapes and pictures without altering their content"
+       style="color-interpolation-filters:sRGB"
+       id="filter66539"
+       x="-0.0021481456"
+       y="-0.0021481456"
+       width="1.0042963"
+       height="1.0042963">
+      <feSpecularLighting
+         in="SourceAlpha"
+         surfaceScale="1"
+         specularConstant="2"
+         specularExponent="18.5"
+         id="feSpecularLighting66531">
+        <feDistantLight
+           elevation="30"
+           azimuth="225"
+           id="feDistantLight66529" />
+      </feSpecularLighting>
+      <feComposite
+         result="result0"
+         operator="atop"
+         in2="SourceGraphic"
+         id="feComposite66533" />
+      <feMorphology
+         radius="2"
+         result="result1"
+         in="SourceAlpha"
+         operator="dilate"
+         id="feMorphology66535" />
+      <feComposite
+         in="result0"
+         in2="result1"
+         id="feComposite66537"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix68022" />
+      <feTurbulence
+         id="feTurbulence68024"
+         baseFrequency="0.05"
+         numOctaves="5"
+         type="fractalNoise"
+         result="result91" />
+      <feDisplacementMap
+         in2="result91"
+         id="feDisplacementMap68026"
+         scale="25"
+         result="result5"
+         xChannelSelector="R"
+         in="fbSourceGraphic"
+         yChannelSelector="A" />
+      <feComposite
+         in2="result5"
+         id="feComposite68028"
+         in="fbSourceGraphic"
+         operator="atop" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8003"
+       id="linearGradient8005"
+       x1="0.040559739"
+       y1="4.9773364"
+       x2="79.492828"
+       y2="4.9773364"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.3927121,-0.2420372,-0.58199646)" />
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     sodipodi:insensitive="true">
+    <rect
+       style="opacity:1;fill:url(#linearGradient8005);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect7945"
+       width="159.15295"
+       height="13.482328"
+       x="-0.20147696"
+       y="-0.39116436" />
+  </g>
+</svg>
