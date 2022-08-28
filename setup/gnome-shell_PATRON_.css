@@ -1396,7 +1396,7 @@ StScrollBar {
 
 /* OSD */
 .osd-window {
-  font-family: "Silkscreen" !important;
+  font-family: "Silkscreen" !important; 
   text-align: center;
   font-weight: bold;
   spacing: 12px;
