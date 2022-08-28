@@ -573,7 +573,7 @@ StScrollBar {
     border-radius: 3px; }
 
 .popup-menu-ornament {
-  width: 6px;
+  width: 12px;
   text-align: center !important; }
   .popup-menu-ornament:ltr {
     text-align: right; }
