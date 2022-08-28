@@ -528,10 +528,12 @@ StScrollBar {
 
 .popup-menu-arrow,
 .popup-menu-icon { /* iconos extraer unidades en places */
-  padding: 6px 18px;
+  cursor: pointer;
+  padding: 6px;
   color: rgba(245, 222, 179, 1);
-  border-radius: 3px !important;
-  background-color: transparent !important;
+  border-radius: 72px !important;
+  border: solid 6px rgba(245, 222, 179, 1);
+  background-color: _PRIMARY_COLOR_ 0.81) !important;
   /* box-shadow: 0 0 12px rgba(0, 0, 0, 0.18); */
   /* solution a bug in places menu = reduce icon-size. si da problemas bajar a 18px */
   icon-size: 12px !important; /* iconos en menus (no apps), extensiones shutdown, etc */
