@@ -246,7 +246,7 @@ stage {
   font-weight: 400;
   font-size: 12pt; }
 
-.lg-extension-name, .osd-window, .nm-dialog-header, .dialog-list .dialog-list-title, .message-list-controls, .weather-button .weather-forecast-temp, .weather-button .weather-header, .world-clocks-button .world-clocks-time, .world-clocks-button .world-clocks-header, .events-button .events-title, .calendar .calendar-month-header .calendar-month-label, .datemenu-today-button .day-label, .popup-menu-ornament {
+.lg-extension-name, .osd-window, .nm-dialog-header, .dialog-list .dialog-list-title, .message-list-controls, .weather-button .weather-forecast-temp, .weather-button .weather-header, .world-clocks-button .world-clocks-time, .world-clocks-button .world-clocks-header, .events-button .events-title, .calendar .calendar-month-header .calendar-month-label, .datemenu-today-button .day-label {
   font-family: "Quicksand" !important;
   font-weight: 400;
   font-size: 12pt; }
@@ -549,8 +549,6 @@ StScrollBar {
   padding: 6px;
   background-color: _PRIMARY_COLOR_ 0.36);
   border-radius: 3px; }
-  .popup-sub-menu .popup-menu-ornament {
-    min-width: 1.09em !important; }
   .popup-sub-menu .popup-menu-item {
     border-radius: 3px;
     margin: 0; }
@@ -575,14 +573,6 @@ StScrollBar {
   .popup-sub-menu .popup-menu-section:last-child .popup-menu-item:last-child {
     border-radius: 3px; }
 
-.popup-menu-ornament {
-  width: 12px;
-  text-align: center !important; }
-  .popup-menu-ornament:ltr {
-    text-align: right; }
-  .popup-menu-ornament:rtl {
-    text-align: left; }
-
 .popup-separator-menu-item {
   margin: 6px 0;
   padding: 0 !important; }
@@ -596,8 +586,6 @@ StScrollBar {
     border-radius: 3px;
     background-color: _PRIMARY_COLOR_ 0.54) !important; 
     background-image: url('assets/grad_bg_separator.svg') !important; }
-  .popup-separator-menu-item .popup-menu-ornament {
-    width: 0 !important; }
   .popup-sub-menu .popup-separator-menu-item {
     /* separador sub menu apagar */
     background-color: transparent !important; }
@@ -618,8 +606,6 @@ StScrollBar {
 .aggregate-menu { /* div-conteiner del menu de apagar, configurar etc. */
   font-family: "Quicksand" !important;
   min-width: 18em !important; }
-  .aggregate-menu .popup-menu-ornament {
-    width: 0 !important; }
   .aggregate-menu .popup-menu-icon {
     -st-icon-style: symbolic !important; }
     .aggregate-menu .popup-menu-icon:ltr {
@@ -634,8 +620,6 @@ StScrollBar {
 .app-menu {
   font-family: "Quicksand" !important;
 }
-  .app-menu .popup-menu-ornament {
-    width: 0 !important; }
   .app-menu .popup-inactive-menu-item:first-child > StLabel:ltr {
     margin-right: 8px; }
   .app-menu .popup-inactive-menu-item:first-child > StLabel:rtl {
@@ -3070,18 +3054,17 @@ StScrollBar {
 
 /* fix ornaments */
 .popup-menu-ornament {
-  width: 3px !important;
-  max-height: 3px;
-  margin-right: 6px;
-  padding: 3px;
+  width: 1px !important;
+  margin: 6px 8px;
+  padding: 0;
   color: transparent;
-  border-radius: 3px;
-  border: solid 1px _PRIMARY_COLOR_ 1) !important;
+  border: solid 1px _PRIMARY_COLOR_ 0.54) !important;
   background-color: _PRIMARY_COLOR_ 0.54) !important;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.36); 
   
 }
-.popup-sub-menu .popup-menu-ornament, .popup-separator-menu-item .popup-menu-ornament{
+.popup-sub-menu .popup-menu-ornament, .popup-separator-menu-item .popup-menu-ornament, .popup-menu-arrow,
+.popup-sub-menu .popup-menu-icon, .popup-sub-menu:first-child .popup-menu-ornament {
   width: 0 !important;
   max-height: 0 !important;
   margin-right: 0 !important;
