@@ -610,8 +610,9 @@ StScrollBar {
   font-family: "Quicksand" !important;
   min-width: 18em !important; }
   .aggregate-menu .popup-menu-icon { /* iconos sub-menu bandeja de sistema */
+    padding: 4px;
     border-radius: 3px;
-    border: solid 1px _PRIMARY_COLOR_ 1) !important;
+    border: solid 2px _PRIMARY_COLOR_ 1) !important;
     background-color: _PRIMARY_COLOR_ 0.54) !important;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.36); 
     -st-icon-style: symbolic !important; }
@@ -3080,12 +3081,4 @@ StScrollBar {
   border: none !important;
   background-color: transparent !important;
   box-shadow: none !important;
-}
-
-/* fix iconos en sub-menu-items */
-.popup-menu .popup-sub-menu .popup-menu-arrow,
-.popup-menu .popup-sub-menu .popup-menu-icon {
-  padding: 3px;
-  border-radius: 3px !important;
-  border: solid 6px !important;
 }
