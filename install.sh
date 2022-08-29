@@ -20,13 +20,19 @@
 # ertiary color for backgrounds:hover #203026 - rgba(32, 48, 38, 1) */
 # fourth color for texts #bdb76b - rgba(189, 183, 107, 1) */
 
+# https://extensions.gnome.org/extension-data/apps-menugnome-shell-extensions.gcampax.github.com.v51.shell-extension.zip
+# https://extensions.gnome.org/extension-data/places-menugnome-shell-extensions.gcampax.github.com.v54.shell-extension.zip
+# https://extensions.gnome.org/extension-data/extension-listtu.berry.v30.shell-extension.zip
+# https://extensions.gnome.org/extension-data/just-perfection-desktopjust-perfection.v21.shell-extension.zip
+# https://extensions.gnome.org/extension-data/user-themegnome-shell-extensions.gcampax.github.com.v49.shell-extension.zip
+
 THEME=waalahar_default
 ROUTE=~/.themes
 FONTROUTE=~/.local/share/fonts
 FONTSNAMES=("Righteous" "Quicksand")
 EXTWL="https://extensions.gnome.org/extension-data"
 declare -A EXTUL
-EXTUL=(["extension-list@tu.berry"]="extension-listtu.berry.v30" ["user-theme@gnome-shell-extensions.gcampax.github.com"]="user-themegnome-shell-extensions.gcampax.github.com.v49" ["just-perfection-desktop@just-perfection"]="just-perfection-desktopjust-perfection.v21")
+EXTUL=(["apps-menu@gnome-shell-extensions.gcampax.github.com"]="apps-menugnome-shell-extensions.gcampax.github.com.v51" ["places-menu@gnome-shell-extensions.gcampax.github.com"]="places-menugnome-shell-extensions.gcampax.github.com.v54" ["extension-list@tu.berry"]="extension-listtu.berry.v30" ["user-theme@gnome-shell-extensions.gcampax.github.com"]="user-themegnome-shell-extensions.gcampax.github.com.v49" ["just-perfection-desktop@just-perfection"]="just-perfection-desktopjust-perfection.v21")
 # colors
 declare -A COLORS
 COLORS=([default]="rgba(33, 37, 43," [darkred]="rgba(139, 0, 0," [tomato]="rgba(255, 99, 71," [crimson]="rgba(220, 20, 60," [firebrick]="rgba(178, 34, 34," [orangered]="rgba(255, 69, 0," [darkolivegreen]="rgba(85, 107, 47," [forestgreen]="rgba(34, 139, 34," [darkcyan]="rgba(0, 139, 139," [dimgrey]="rgba(105, 105, 105," [midnightblue]="rgba(25, 25, 112," [royalblue]="rgba(65, 105, 225," [slateblue]="rgba(106, 90, 205," [seagreen]="rgba(46, 139, 87," [teal]="rgba(0, 128, 128," [purple]="rgba(128, 0, 128,")
