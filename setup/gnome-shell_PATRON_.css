@@ -455,7 +455,7 @@ StScrollBar {
   color: rgba(245, 222, 179, 1); 
   font-family: "Quicksand" !important;}
   .popup-menu.panel-menu {
-    margin-bottom: 1.75em; }
+    margin-bottom: 2em; }
 
 .popup-menu-content, .candidate-popup-content { /* menus */
   font-family: "Quicksand" !important;
@@ -469,7 +469,7 @@ StScrollBar {
   box-shadow: inset 0 0 36px rgba(87, 88, 89, 0.36),
                     0 0 18px black;
   padding: 6px;
-  margin: 6px; 
+  margin: 6px;
   spacing: 0px;
 }
 
@@ -638,7 +638,7 @@ StScrollBar {
 #calendarArea { /* caja menu eventos con todo: notificaciones, calendario, eventos, clima */
   /* max-height: 36em; */
   margin: 0px;
-  padding: 0px 12px;
+  padding: 0px;
 }
 
 .datemenu-calendar-column {
