@@ -425,7 +425,8 @@ StScrollBar {
   StScrollView StScrollBar {
     min-width: 12px;
     min-height: 12px;
-    margin-left: 18px !important;
+    margin: 6px 0 6px 18px;
+    /* margin-left: 18px !important; */
     /* margin-bottom: 18px !important; */
     border-radius: 3px;
     background-color: _PRIMARY_COLOR_ 1);  
@@ -552,15 +553,15 @@ StScrollBar {
   .popup-sub-menu .popup-menu-item {
     border-radius: 3px;
     margin: 0; 
-    padding: 6px 12px;
-    font-weight: 600;}
+    padding: 6px 12px; }
     .popup-sub-menu .popup-menu-item:first-child {
       border-radius: 3px; }
     .popup-sub-menu .popup-menu-item:last-child {
       border-radius: 3px; }
     .popup-sub-menu .popup-menu-item:focus, .popup-sub-menu .popup-menu-item:hover {
-      color: rgba(30, 30, 30, 1); 
-      background-color: rgba(245, 222, 179, 0.72) !important;
+      color: rgba(245, 222, 179, 1); 
+      background-color: _PRIMARY_COLOR_ 0.81) !important;
+      background-image: url('assets/grad_bg_button_hover.svg') !important;
       /* text-shadow: 0 0 3px rgba(245, 222, 179, 0.18); */
     }
     .popup-sub-menu .popup-menu-item:checked {
@@ -577,7 +578,7 @@ StScrollBar {
     border-radius: 3px; }
 
 .popup-separator-menu-item {
-  margin: 6px 0;
+  margin: 0;
   padding: 0 !important; }
   .popup-separator-menu-item:ltr {
     margin-right: 4px; }
@@ -829,12 +830,16 @@ StScrollBar {
     font-size: 12pt;
     spacing: 12px; }
   .events-button .events-title { /* titulos eventos agenda */
+    width: 8.2em !important;
     font-size: 12pt;
-    font-weight: 400;
+    font-weight: 700;
     color: rgba(245, 222, 179, 1);
+    border: solid 1px _PRIMARY_COLOR_ 1);
     background-color: _PRIMARY_COLOR_ 1); 
+    background-image: url('assets/grad_bg_button_hover.svg') !important;
     border-radius: 3px;
     padding: 6px;
+    padding-left: 12px;
     margin-bottom: 4px; }
   .events-button .event-time {
     color: rgba(245, 222, 179, 1) !important; }
@@ -871,15 +876,18 @@ StScrollBar {
     spacing-columns: 12px; }
   .world-clocks-button .world-clocks-header {
     margin: 6px;
-    padding: 6px;
+    padding: 6px 12px;
     font-size: 12pt;
-    font-weight: 400;
+    font-weight: 700;
     color: rgba(245, 222, 179, 1);
+    border: solid 1px _PRIMARY_COLOR_ 1);
     background-color: _PRIMARY_COLOR_ 1);
+    background-image: url('assets/grad_bg_button_hover.svg') !important;
     border-radius: 3px;
   }
   .world-clocks-button .world-clocks-city, .world-clocks-button .world-clocks-time, .world-clocks-button .world-clocks-timezone {
     padding: 0px 6px;
+    padding-right: 12px;
     font-size: 10pt;
     font-weight: 400;
     color: rgba(245, 222, 179, 1); }
@@ -917,18 +925,24 @@ StScrollBar {
   .weather-button .weather-box {
     spacing: 10px; }
   .weather-button .weather-header-box {
+    width: 8.2em !important;
     margin: 6px;
     padding: 6px;
+    padding-left: 12px;
     spacing: 6px;
     border-radius: 3px;
     color: rgba(245, 222, 179, 1);
-    background-color: _PRIMARY_COLOR_ 1);}
+    border: solid 1px _PRIMARY_COLOR_ 1);
+    background-color: _PRIMARY_COLOR_ 1);
+    background-image: url('assets/grad_bg_button_hover.svg') !important;}
   .weather-button .weather-header {
     font-size: 12pt;
-    font-weight: 400;
+    font-weight: 700;
     color: rgba(245, 222, 179, 1); }
     .weather-button .weather-header.location {
-      font-weight: normal; }
+      padding-right: 6px;
+      font-size: 12pt;
+      font-weight: 700; }
   .weather-button .weather-grid {
     spacing-rows: 6px;
     spacing-columns: 12px; }
