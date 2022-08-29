@@ -405,7 +405,7 @@ StEntry {
   -barlevel-border-width: 18px;
   -barlevel-border-color: transparent;
   -barlevel-border-radius: 3px;
-  -barlevel-active-background-color: rgba(44, 49, 60, 1);
+  -barlevel-active-background-color: _PRIMARY_COLOR_ 1); 
   -barlevel-active-border-color: transparent;
   -barlevel-overdrive-color: transparent;
   -barlevel-overdrive-border-color: _PRIMARY_COLOR_ 1); 
