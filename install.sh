@@ -23,7 +23,7 @@
 THEME=waalahar_default
 ROUTE=~/.themes
 FONTROUTE=~/.local/share/fonts
-FONTSNAMES=("Righteous" "Silkscreen")
+FONTSNAMES=("Righteous" "Quicksand")
 EXTWL="https://extensions.gnome.org/extension-data"
 declare -A EXTUL
 EXTUL=(["extension-list@tu.berry"]="extension-listtu.berry.v30" ["user-theme@gnome-shell-extensions.gcampax.github.com"]="user-themegnome-shell-extensions.gcampax.github.com.v49" ["just-perfection-desktop@just-perfection"]="just-perfection-desktopjust-perfection.v21")

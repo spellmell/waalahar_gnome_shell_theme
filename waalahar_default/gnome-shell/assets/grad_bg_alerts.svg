@@ -3,12 +3,12 @@
 
 <svg
    width="600"
-   height="48"
-   viewBox="0 0 158.75 12.7"
+   height="180"
+   viewBox="0 0 158.75 47.625"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-   sodipodi:docname="grad_bg_button_hover.svg"
+   sodipodi:docname="grad_bg_alerts.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -35,24 +35,24 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
     <sodipodi:guide
-       position="0,12.7"
+       position="0,47.625"
        orientation="0,600"
-       id="guide10317"
+       id="guide264"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="158.75,12.7"
-       orientation="48,0"
-       id="guide10319"
+       position="158.75,47.625"
+       orientation="180,0"
+       id="guide266"
        inkscape:locked="false" />
     <sodipodi:guide
        position="158.75,0"
        orientation="0,-600"
-       id="guide10321"
+       id="guide268"
        inkscape:locked="false" />
     <sodipodi:guide
        position="0,0"
-       orientation="-48,0"
-       id="guide10323"
+       orientation="-180,0"
+       id="guide270"
        inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
@@ -193,7 +193,7 @@
        x2="79.492828"
        y2="4.9773364"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1,0,0,1.3927121,-0.2420372,-0.58199646)" />
+       gradientTransform="matrix(0.99999999,0,0,4.9947198,-0.24203675,-1.07555)" />
   </defs>
   <g
      inkscape:label="Capa 1"
@@ -204,8 +204,8 @@
        style="opacity:1;fill:url(#linearGradient8005);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
        id="rect7945"
        width="159.15295"
-       height="13.482328"
-       x="-0.20147696"
-       y="-0.39116436" />
+       height="48.352028"
+       x="-0.20147651"
+       y="-0.39116392" />
   </g>
 </svg>
