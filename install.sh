@@ -102,12 +102,10 @@ setup (){
       sed -i "s/#ff6600/$2/g" ./temp/gnome-shell/assets/grad_bg_popups.svg
       sed -i "s/#ff6600/$2/g" ./temp/gnome-shell/assets/grad_bg_panel.svg
       sed -i "s/#ff6600/$2/g" ./temp/gnome-shell/assets/grad_bg_button.svg
-      # sed -i "s/#ff6600/$2/g" ./temp/gnome-shell/assets/grad_bg_button_hover.svg
       sed -i "s/#ff0000/$2/g" ./temp/gnome-shell/assets/grad_bg_overview.svg
       sed -i "s/#ff0000/$2/g" ./temp/gnome-shell/assets/grad_bg_popups.svg
       sed -i "s/#ff0000/$2/g" ./temp/gnome-shell/assets/grad_bg_panel.svg
       sed -i "s/#ff0000/$2/g" ./temp/gnome-shell/assets/grad_bg_button.svg
-      # sed -i "s/#ff0000/$2/g" ./temp/gnome-shell/assets/grad_bg_button_hover.svg
       sed -i "s/#d45500/$2/g" ./temp/gnome-shell/assets/toggle-on-light.svg
       sed -i "s/#d45500/$2/g" ./temp/gnome-shell/assets/checkbox.svg
     else
@@ -117,12 +115,10 @@ setup (){
       sed -i "s/#ff6600/\#$2/g" ./temp/gnome-shell/assets/grad_bg_popups.svg
       sed -i "s/#ff6600/\#$2/g" ./temp/gnome-shell/assets/grad_bg_panel.svg
       sed -i "s/#ff6600/\#$2/g" ./temp/gnome-shell/assets/grad_bg_button.svg
-      # sed -i "s/#ff6600/\#$2/g" ./temp/gnome-shell/assets/grad_bg_button_hover.svg
       sed -i "s/#ff0000/\#$2/g" ./temp/gnome-shell/assets/grad_bg_overview.svg
       sed -i "s/#ff0000/\#$2/g" ./temp/gnome-shell/assets/grad_bg_popups.svg
       sed -i "s/#ff0000/\#$2/g" ./temp/gnome-shell/assets/grad_bg_panel.svg
       sed -i "s/#ff0000/\#$2/g" ./temp/gnome-shell/assets/grad_bg_button.svg
-      # sed -i "s/#ff0000/\#$2/g" ./temp/gnome-shell/assets/grad_bg_button_hover.svg
       sed -i "s/#d45500/\#$2/g" ./temp/gnome-shell/assets/toggle-on-light.svg
       sed -i "s/#d45500/\#$2/g" ./temp/gnome-shell/assets/checkbox.svg
     fi
@@ -133,8 +129,6 @@ setup (){
     sed -i "s/#ff0000/\#1E1E1E/g" ./temp/gnome-shell/assets/grad_bg_panel.svg
     sed -i "s/#ff6600/\#1E1E1E/g" ./temp/gnome-shell/assets/grad_bg_button.svg
     sed -i "s/#ff0000/\#1E1E1E/g" ./temp/gnome-shell/assets/grad_bg_button.svg
-    # sed -i "s/#ff6600/\#1E1E1E/g" ./temp/gnome-shell/assets/grad_bg_button_hover.svg
-    # sed -i "s/#ff0000/\#1E1E1E/g" ./temp/gnome-shell/assets/grad_bg_button_hover.svg
   fi
 }
 
@@ -206,7 +200,6 @@ fi
     moving $rndColor
     dconfig $rndColor
   else
-    # echo "fail in the random color generation, trying again..."
     $0 -r
   fi
 ;;
@@ -222,7 +215,7 @@ fi
     moving $2
     dconfig $2
   else
-    echo -e "You have not entered a valid hexadecimal color code. You must enter a 6-digit hexadecimal number (without #), for example: B22222 \nhttps://www.w3schools.com/cssref/css_colors.asp"
+    echo -e "\nYou have not entered a valid hexadecimal color code.\n\nYou must enter a 6-digit hexadecimal number (without #), for example: -c bb33cc\n\nhttps://www.w3schools.com/cssref/css_colors.asp"
   fi
 ;;
 -u)
@@ -230,7 +223,7 @@ fi
   notify-send "All Waalahar themes have been uninstalled." -i "gnome-logo-text-dark"
 ;;
 *)
-echo -e "\n||| Waalahar Gnome Shell Theme |||\n\nRun ./install.sh -i default, all, or one of these colors: darkred, tomato, crimson, firebrick, orangered, darkolivegreen, forestgreen, darkcyan, dimgrey, midnightblue, royalblue, slateblue, seagreen, teal, or purple to install themes with preseted colors.\n\nYou can use -r to generate a random color.\n\nIf you want to set a personal color use -c +hexadecimal color number (whitout #), for example: -c ff3c7a.\n\nUse -u to uninstall all installed themes.\n"
+echo -e "\n||| Waalahar Gnome Shell Theme |||\n\nRun ./install.sh -i default, all, or one of these colors: darkred, tomato, crimson, firebrick, orangered, darkolivegreen, forestgreen, darkcyan, dimgrey, midnightblue, royalblue, slateblue, seagreen, teal, or purple to install themes with preseted colors.\n\nYou can use -r to generate a random color.\n\nIf you want to set a personal color use -c +hexadecimal color number (whitout #), for example: -c bb33cc.\n\nUse -u to uninstall all installed themes.\n\nTo change between installed themes use the User Themes Extension."
 exit 1
 ;;
 esac
