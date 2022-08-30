@@ -29,7 +29,7 @@
 THEME=waalahar_default
 ROUTE=~/.themes
 FONTROUTE=~/.local/share/fonts
-FONTSNAMES=("Lobster" "Poppins")
+FONTSNAMES=("Lobster" "Cairo")
 EXTWL="https://extensions.gnome.org/extension-data"
 declare -A EXTUL
 EXTUL=(["apps-menu@gnome-shell-extensions.gcampax.github.com"]="apps-menugnome-shell-extensions.gcampax.github.com.v51" ["places-menu@gnome-shell-extensions.gcampax.github.com"]="places-menugnome-shell-extensions.gcampax.github.com.v54" ["extension-list@tu.berry"]="extension-listtu.berry.v30" ["user-theme@gnome-shell-extensions.gcampax.github.com"]="user-themegnome-shell-extensions.gcampax.github.com.v49" ["just-perfection-desktop@just-perfection"]="just-perfection-desktopjust-perfection.v21")
@@ -45,17 +45,17 @@ install_fonts (){
   installFonts=true
   if [ $installFonts == true ];
   then
-    for FONTNAME in ${FONTSNAMES[@]};
+    for FONTNAME in ${!FONTSNAMES[@]};
     do
-      if [ ! -d /usr/share/fonts/$FONTNAME ];
+      if [[ ! -d "/usr/share/fonts/${FONTSNAMES[FONTNAME]}" && ! -d "$FONTROUTE/${FONTSNAMES[FONTNAME]}" ]];
       then
         if [ ! -d $FONTROUTE ];
         then
           mkdir -p $FONTROUTE
-          wget -O $FONTNAME.zip "https://fonts.google.com/download?family=$FONTNAME"
-          unzip -o -d $FONTROUTE/$FONTNAME $FONTNAME.zip
-          rm ./$FONTNAME.zip
         fi
+        wget -O ${FONTSNAMES[FONTNAME]}.zip "https://fonts.google.com/download?family=${FONTSNAMES[FONTNAME]}"
+        unzip -o -d $FONTROUTE/${FONTSNAMES[FONTNAME]} ${FONTSNAMES[FONTNAME]}.zip
+        rm ./${FONTSNAMES[FONTNAME]}.zip
       fi
     done
   fi
@@ -86,6 +86,10 @@ install_extensions (){
 
 declare -F setup
 setup (){
+  # call funcs
+  install_fonts
+  install_extensions
+  
   cp ./setup/waalahar.dconf_setup ./waalahar.dconf
   sed -i "s/_USERNAME_/$USER/" ./waalahar.dconf
   cp -r ./waalahar_default ./temp
@@ -150,10 +154,6 @@ dconfig (){
 
 case "$1" in
 -i)
-# call funcs
-install_fonts
-install_extensions
-
 # theme instalation
 if [ ! -d $ROUTE ];
 then
@@ -184,10 +184,6 @@ fi
 # busctl --user call org.gnome.Shell /org/gnome/Shell org.gnome.Shell Eval s 'Meta.restart("Restarting…")'
 ;;
 -r)
-  # call funcs
-  install_fonts
-  install_extensions
-
   rndColor=$(echo $(od -txC -An -N3 /dev/random | tr \  -) | sed 's/-//g')
   a=$(echo $rndColor | cut -c 1-2 | tr '[:lower:]' '[:upper:]') b=$(echo $rndColor | cut -c 3-4 | tr '[:lower:]' '[:upper:]') c=$(echo $rndColor | cut -c 5-6 | tr '[:lower:]' '[:upper:]')
   r=$(echo "ibase=16; $a" | bc) g=$(echo "ibase=16; $b" | bc) b=$(echo "ibase=16; $c" | bc)

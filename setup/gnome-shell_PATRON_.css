@@ -30,11 +30,6 @@
  * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-/*
- font download: https://fonts.google.com/download?family=Goldman
- fuentes candidatas: Raleway, Orbitron, Goldman, Fredoka One, Lobster, Lobster*, Baloo Chettan 2, Silkscreen, Quicksand*
- */
-
  /* default theme base colors */
  /* primary color for buttons and decorations #21252B - rgba(33, 37, 43, 1) */
  /* secondary color for panel #1E1E1E - rgba(30, 30, 30, 1) */
@@ -48,7 +43,12 @@ stage {
   color: rgba(245, 222, 179, 1);
   font-size: 12pt;
   font-weight:400;
-  font-family: "Poppins" !important; /* general font, no buttons in panel. */
+  font-family: "Cairo" !important; /* general font, no buttons in panel. */
+}
+
+/* font for buttons in panel */
+#panel .panel-button {
+  font-family: "Lobster" !important;
 }
 
 /* Common Stylings */
@@ -996,7 +996,8 @@ StScrollBar {
   color: rgba(245, 222, 179, 1);
   border: solid 1px _PRIMARY_COLOR_ 0.81);
   background-color: _PRIMARY_COLOR_ 0.72); 
-  background-image: url('assets/grad_bg_alerts.svg');}
+  background-image: url('assets/grad_bg_alerts.svg');
+  background-repeat: repeat-y;}
   .message:focus {
     color: rgba(245, 222, 179, 1);
     background-color: rgba(44, 49, 60, 0.81);
@@ -1680,14 +1681,13 @@ StScrollBar {
  }
   #panel .panel-button {
     background-image: url('assets/grad_bg_button.svg');
-    min-width: 3em !important;
+    /* min-width: 3em !important; */
     max-height: 2em !important;
     padding: 2px 12px !important;
     -natural-hpadding: 6px;
     -minimum-hpadding: 6px;
     margin: 3px;
-    font-size: 11pt !important;
-    font-family: "Lobster" !important; /* _FONT_BUTTONS_ */
+    font-size: 12pt !important;
     font-weight: 400;
     color: rgba(245, 222, 179, 1);
     background-color: _PRIMARY_COLOR_ 0.54); /* color buttons */
@@ -2924,14 +2924,13 @@ StScrollBar {
                     0 0 18px black;
  }
     #panel:overview .panel-button, #panel.solid:overview .panel-button {
-      min-width: 3em !important;
+      /* min-width: 3em !important; */
       max-height: 2em !important;
       padding: 2px 12px !important;
       -natural-hpadding: 6px;
       -minimum-hpadding: 6px;
       margin: 3px;
-      font-size: 11pt !important;
-      font-family: "Lobster" !important; /* _FONT_BUTTONS_ */
+      font-size: 12pt !important;
       font-weight: 400;
       color: rgba(245, 222, 179, 1);
       background-color: _PRIMARY_COLOR_ 0.54); /* color buttons */
@@ -2941,14 +2940,13 @@ StScrollBar {
       border: 0;
       border-radius: 3px;}
   #panel .panel-button, #panel.solid .panel-button {
-    min-width: 3em !important;
+    /* min-width: 3em !important; */
     max-height: 2em !important;
     padding: 2px 12px !important;
     -natural-hpadding: 6px;
     -minimum-hpadding: 6px;
     margin: 3px;
-    font-size: 11pt !important;
-    font-family: "Lobster" !important; /* _FONT_BUTTONS_ */
+    font-size: 12pt !important;
     font-weight: 400;
     color: rgba(245, 222, 179, 1);
     background-color: _PRIMARY_COLOR_ 0.54); /* color buttons */
@@ -2999,7 +2997,6 @@ StScrollBar {
   spinner-image: url("classic-process-working.svg");
 }
   #appMenu .panel-status-menu-box { /* boton aplicacion seleccionada en el panel */
-    font-family: "Lobster" !important; /* _FONT_BUTTONS_ */
     font-weight: 400;
     /* margin: 6px; */
     /* padding: 6px; */
