@@ -370,7 +370,7 @@ StEntry {
   height: 24px;
   text-align: left;
   border-radius: 3px;
-  border: solid 1px _PRIMARY_COLOR_ 0.54);
+  border: solid 1px _PRIMARY_COLOR_ 0.81);
   background-color: rgba(245, 222, 179, 1);
   background-image: url("resource:///org/gnome/shell/theme/checkbox-off-light.svg"); }
 
@@ -466,7 +466,7 @@ StScrollBar {
   background-color: rgba(30, 30, 30, 0.88)  ;
   background-image: url('assets/grad_bg_popups.svg');
   border-radius: 3px;
-  border: solid 1px _PRIMARY_COLOR_ 0.36);
+  border: solid 1px _PRIMARY_COLOR_ 0.81);
   box-shadow: inset 0 0 36px rgba(87, 88, 89, 0.36),
                     0 0 18px black;
   padding: 6px;
@@ -1106,7 +1106,7 @@ StScrollBar {
   margin: 5em 3px;
   margin-bottom: 1em;
   border-radius: 3px;
-  border: solid 1px _PRIMARY_COLOR_ 0.54);
+  border: solid 1px _PRIMARY_COLOR_ 0.81);
   color: rgba(245, 222, 179, 1); 
   background-color: rgba(30, 30, 30, 1); 
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.36);
@@ -1517,10 +1517,10 @@ StScrollBar {
     border-radius: 3px; }
 
 .switcher-arrow {
-  border: solid 1px _PRIMARY_COLOR_ 0.54);
+  border: solid 1px _PRIMARY_COLOR_ 0.81);
   color: rgba(245, 222, 179, 1); }
   .switcher-arrow:highlighted {
-    border: solid 1px _PRIMARY_COLOR_ 0.54);
+    border: solid 1px _PRIMARY_COLOR_ 0.81);
     color: rgba(245, 222, 179, 1); }
 
 .input-source-switcher-symbol {
@@ -1557,7 +1557,7 @@ StScrollBar {
   padding-bottom: 12px;
   margin-bottom: 4em;
   border-radius: 3px;
-  border: solid 1px _PRIMARY_COLOR_ 0.54);
+  border: solid 1px _PRIMARY_COLOR_ 0.81);
   spacing: 12px; }
 
 .screenshot-ui-close-button {
@@ -1838,7 +1838,7 @@ StScrollBar {
   color: rgba(245, 222, 179, 1);
   background-color: rgba(30, 30, 30, 1);
   border-radius: 3px;
-  border: solid 1px _PRIMARY_COLOR_ 0.54);
+  border: solid 1px _PRIMARY_COLOR_ 0.81);
   padding: 6px 12px; }
 
 .window-close, .screenshot-ui-close-button {
@@ -1873,7 +1873,7 @@ StScrollBar {
   padding: 0px;
   border-radius: 20px;
   background-color: _PRIMARY_COLOR_ 0.81);
-  border: solid 1px _PRIMARY_COLOR_ 0.54);
+  border: solid 1px _PRIMARY_COLOR_ 0.81);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.36);
   }
 
@@ -1929,7 +1929,7 @@ StScrollBar {
   color: rgba(245, 222, 179, 1);
   background-color: rgba(30, 30, 30, 0.81);
   border-radius: 3px;
-  border: solid 1px _PRIMARY_COLOR_ 0.54);
+  border: solid 1px _PRIMARY_COLOR_ 0.81);
   box-shadow: inset 0 0 36px rgba(87, 88, 89, 0.36),
   0 0 18px black;
   padding: 6px;
@@ -2032,7 +2032,7 @@ StScrollBar {
 .dash-item-container .show-apps .overview-icon {
   /* icono de abrir aplicaciones en dash */
   margin-right: 0px !important;
-  border: solid 1px _PRIMARY_COLOR_ 0.54);
+  border: solid 1px _PRIMARY_COLOR_ 0.81);
   border-radius: 3px;
   background-color: rgba(30, 30, 30, 1);  
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.36);}
@@ -2080,7 +2080,7 @@ StScrollBar {
   color: rgba(245, 222, 179, 1);
   background-color: rgba(30, 30, 30, 1); 
   border-radius: 3px;
-  border: solid 1px _PRIMARY_COLOR_ 0.54);
+  border: solid 1px _PRIMARY_COLOR_ 0.81);
   padding: 6px 12px;
   text-align: center;
   -y-offset: 8px; }
@@ -2112,7 +2112,7 @@ StScrollBar {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.36) !important;}
 
 .app-well-app:hover .overview-icon, .grid-search-result:hover .overview-icon {
-  border: solid 1px _PRIMARY_COLOR_ 0.54);
+  border: solid 1px _PRIMARY_COLOR_ 0.81);
   background-color: rgba(44, 49, 60, 0.81); 
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.36) !important;}
 
@@ -2145,7 +2145,7 @@ StScrollBar {
 
 .app-well-app.app-folder .overview-icon, .app-folder.grid-search-result .overview-icon {
   /* color de fondo de aplicaciones agrupadas */
-  border: solid 1px _PRIMARY_COLOR_ 0.54);
+  border: solid 1px _PRIMARY_COLOR_ 0.81);
   background-color: rgba(30, 30, 30, 0.81); }
 
 .app-well-app.app-folder:hover .overview-icon, .app-folder.grid-search-result:hover .overview-icon {
@@ -2281,7 +2281,7 @@ StScrollBar {
     width: 18px; }
 
 .workspace-thumbnail-indicator {
-  border: solid 1px _PRIMARY_COLOR_ 0.54);
+  border: solid 1px _PRIMARY_COLOR_ 0.81);
   border-radius: 3px;
   padding: 0px; }
 
@@ -2612,7 +2612,7 @@ StScrollBar {
   spacing: 6px; }
 
 .lg-obj-inspector-button {
-  border: solid 1px _PRIMARY_COLOR_ 0.54);
+  border: solid 1px _PRIMARY_COLOR_ 0.81);
   padding: 4px;
   border-radius: 3px; }
   .lg-obj-inspector-button:hover {
@@ -2632,7 +2632,7 @@ StScrollBar {
   margin: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   color: rgba(245, 222, 179, 1);
-  border: solid 1px _PRIMARY_COLOR_ 0.54);
+  border: solid 1px _PRIMARY_COLOR_ 0.81);
   background-color: rgba(30, 30, 30, 0.81); }
   .lg-extension:focus {
     color: rgba(245, 222, 179, 1);
@@ -2657,7 +2657,7 @@ StScrollBar {
 #LookingGlassPropertyInspector { /* revisar lg */
   font-family: "Quicksand" !important;
   background: rgba(30, 30, 30, 0.81); 
-  border: solid 1px _PRIMARY_COLOR_ 0.54);
+  border: solid 1px _PRIMARY_COLOR_ 0.81);
   border-radius: 3px;
   padding: 18px; }
 
@@ -2690,23 +2690,23 @@ StScrollBar {
   .unlock-dialog .modal-dialog-button {
     padding: 4px 18px;
     color: rgba(245, 222, 179, 1);
-    border: solid 1px _PRIMARY_COLOR_ 0.54);
+    border: solid 1px _PRIMARY_COLOR_ 0.81);
     background-color: rgba(30, 30, 30, 0.81);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
     .login-dialog .modal-dialog-button:hover, .login-dialog .modal-dialog-button:focus,
     .unlock-dialog .modal-dialog-button:hover,
     .unlock-dialog .modal-dialog-button:focus {
-      border: solid 1px _PRIMARY_COLOR_ 0.54);
+      border: solid 1px _PRIMARY_COLOR_ 0.81);
       background-color: rgba(44, 49, 60, 1); }
     .login-dialog .modal-dialog-button:active,
     .unlock-dialog .modal-dialog-button:active {
-      border: solid 1px _PRIMARY_COLOR_ 0.54);
+      border: solid 1px _PRIMARY_COLOR_ 0.81);
       background-color: rgba(30, 30, 30, 0.81); 
       box-shadow: none; }
     .login-dialog .modal-dialog-button:insensitive,
     .unlock-dialog .modal-dialog-button:insensitive {
       color: rgba(44, 49, 60, 0.7);
-      border: solid 1px _PRIMARY_COLOR_ 0.54);
+      border: solid 1px _PRIMARY_COLOR_ 0.81);
       background-color: rgba(30, 30, 30, 0.81); }
     .login-dialog .modal-dialog-button:default,
     .unlock-dialog .modal-dialog-button:default {
@@ -2738,7 +2738,7 @@ StScrollBar {
     border-radius: 3px;
     width: 2.18em;
     height: 2.18em;
-    border: solid 1px _PRIMARY_COLOR_ 0.54);
+    border: solid 1px _PRIMARY_COLOR_ 0.81);
     background-color: rgba(30, 30, 30, 0.81); }
     .login-dialog .cancel-button StIcon,
     .login-dialog .switch-user-button StIcon,
@@ -2957,7 +2957,7 @@ StScrollBar {
   font-family: "Quicksand" !important;
   font-weight: normal;
   /* border-radius: 3px; */
-  /* border: solid 1px _PRIMARY_COLOR_ 0.36); */
+  /* border: solid 1px _PRIMARY_COLOR_ 0.81); */
   background-color: rgba(30, 30, 30, 0.88);
   /* background-color: transparent !important; */
   border-top: solid 1px _PRIMARY_COLOR_ 0.18); /* border de color primario _PRIMARY_COLOR_ 1) */
