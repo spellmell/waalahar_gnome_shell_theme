@@ -370,7 +370,8 @@ StEntry {
 /* Switches */
 .toggle-switch {
   color: rgba(245, 222, 179, 1);
-  height: 36px;
+  width: 70px;
+  height: 40px;
   background-size: contain;
   background-image: url("assets/toggle-off-light.svg");}
   .toggle-switch:checked {
@@ -552,7 +553,7 @@ StScrollBar {
         /* text-shadow: 0 0 3px rgba(245, 222, 179, 0.18); */
      }
     .popup-sub-menu .popup-menu-item:active {
-      background-color: rgba(245, 222, 179, 0.72) !important;}
+      background-color: _PRIMARY_COLOR_ 1) !important; }
   .popup-sub-menu .popup-menu-section .popup-menu-item:last-child:hover, .popup-sub-menu .popup-menu-section .popup-menu-item:last-child:focus {
     border-radius: 3px;}
   .popup-sub-menu .popup-menu-section:last-child .popup-menu-item:last-child {
@@ -631,15 +632,17 @@ StScrollBar {
 
 /* today button (the date) */
 .datemenu-today-button {
-  margin: 6px;
-  padding: 6px;
-  color: rgba(245, 222, 179, 1);
-  /* text-align: center !important; */
-  font-size: 14pt !important;
-  font-weight: 700 !important;
+  /* forcing to hide */
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  color: transparent !important;
+  font-size: 1pt !important;
+  font-weight: 200 !important;
   border-radius: 3px;
-  background-color: rgba(30, 30, 30, 0.81);
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.36) !important;
+  background-color: rgba(30, 30, 30, 0.0) !important;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.0) !important;
 }
   .datemenu-today-button:insensitive {
     color: rgba(245, 222, 179, 1);
@@ -806,7 +809,7 @@ StScrollBar {
   .events-button .events-box {
     spacing: 6px;}
   .events-button .events-list {
-    font-size: 12pt;
+    font-size: 10pt;
     spacing: 12px;}
   .events-button .events-title { /* titulos eventos agenda */
     width: 8.2em !important;
@@ -920,8 +923,8 @@ StScrollBar {
     color: rgba(245, 222, 179, 1);}
     .weather-button .weather-header.location {
       padding-right: 6px;
-      font-size: 12pt;
-      font-weight: 700;}
+      font-size: 10pt;
+      font-weight: 400;}
   .weather-button .weather-grid {
     spacing-rows: 6px;
     spacing-columns: 12px;}
