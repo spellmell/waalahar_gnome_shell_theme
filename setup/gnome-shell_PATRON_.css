@@ -386,15 +386,15 @@ StEntry {
   -slider-handle-border-color: rgba(245, 222, 179, 0.81);
   -slider-handle-border-width: 6px;
   -barlevel-height: 36px;
-  -barlevel-background-color: rgba(30, 30, 30, 1); 
+  -barlevel-background-color: rgba(44, 49, 60, 1); 
   -barlevel-border-width: 18px;
-  -barlevel-border-color: transparent;
-  -barlevel-border-radius: 3px;
+  -barlevel-border-color: rgba(245, 222, 179, 0.81);
+  -barlevel-border-radius: 6px;
   -barlevel-active-background-color: _PRIMARY_COLOR_ 1); 
-  -barlevel-active-border-color: transparent;
-  -barlevel-overdrive-color: transparent;
+  -barlevel-active-border-color: rgba(245, 222, 179, 0.81);
+  -barlevel-overdrive-color: rgba(245, 222, 179, 0.81);
   -barlevel-overdrive-border-color: _PRIMARY_COLOR_ 1); 
-  -barlevel-overdrive-separator-width: 3px;
+  -barlevel-overdrive-separator-width: 6px;
  }
 
 /* Scrollbars */
