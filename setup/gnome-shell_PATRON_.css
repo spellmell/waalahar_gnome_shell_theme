@@ -31,8 +31,8 @@
  */
 
 /*
- font download: https://fonts.google.com/download?family=Righteous
- fuentes candidatas: Raleway, Orbitron, Goldman, Fredoka One, Lobster, Righteous*, Baloo Chettan 2, Silkscreen, Quicksand*
+ font download: https://fonts.google.com/download?family=Goldman
+ fuentes candidatas: Raleway, Orbitron, Goldman, Fredoka One, Lobster, Lobster*, Baloo Chettan 2, Silkscreen, Quicksand*
  */
 
  /* default theme base colors */
@@ -48,7 +48,7 @@ stage {
   color: rgba(245, 222, 179, 1);
   font-size: 12pt;
   font-weight:400;
-  font-family: "Goldman" !important; /* general font, no buttons in panel. */
+  font-family: "Poppins" !important; /* general font, no buttons in panel. */
 }
 
 /* Common Stylings */
@@ -1687,7 +1687,7 @@ StScrollBar {
     -minimum-hpadding: 6px;
     margin: 3px;
     font-size: 11pt !important;
-    font-family: "Righteous" !important; /* _FONT_BUTTONS_ */
+    font-family: "Lobster" !important; /* _FONT_BUTTONS_ */
     font-weight: 400;
     color: rgba(245, 222, 179, 1);
     background-color: _PRIMARY_COLOR_ 0.54); /* color buttons */
@@ -2931,7 +2931,7 @@ StScrollBar {
       -minimum-hpadding: 6px;
       margin: 3px;
       font-size: 11pt !important;
-      font-family: "Righteous" !important; /* _FONT_BUTTONS_ */
+      font-family: "Lobster" !important; /* _FONT_BUTTONS_ */
       font-weight: 400;
       color: rgba(245, 222, 179, 1);
       background-color: _PRIMARY_COLOR_ 0.54); /* color buttons */
@@ -2948,7 +2948,7 @@ StScrollBar {
     -minimum-hpadding: 6px;
     margin: 3px;
     font-size: 11pt !important;
-    font-family: "Righteous" !important; /* _FONT_BUTTONS_ */
+    font-family: "Lobster" !important; /* _FONT_BUTTONS_ */
     font-weight: 400;
     color: rgba(245, 222, 179, 1);
     background-color: _PRIMARY_COLOR_ 0.54); /* color buttons */
@@ -2999,7 +2999,7 @@ StScrollBar {
   spinner-image: url("classic-process-working.svg");
 }
   #appMenu .panel-status-menu-box { /* boton aplicacion seleccionada en el panel */
-    font-family: "Righteous" !important; /* _FONT_BUTTONS_ */
+    font-family: "Lobster" !important; /* _FONT_BUTTONS_ */
     font-weight: 400;
     /* margin: 6px; */
     /* padding: 6px; */

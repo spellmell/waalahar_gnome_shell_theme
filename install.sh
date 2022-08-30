@@ -29,7 +29,7 @@
 THEME=waalahar_default
 ROUTE=~/.themes
 FONTROUTE=~/.local/share/fonts
-FONTSNAMES=("Righteous" "Quicksand")
+FONTSNAMES=("Lobster" "Poppins")
 EXTWL="https://extensions.gnome.org/extension-data"
 declare -A EXTUL
 EXTUL=(["apps-menu@gnome-shell-extensions.gcampax.github.com"]="apps-menugnome-shell-extensions.gcampax.github.com.v51" ["places-menu@gnome-shell-extensions.gcampax.github.com"]="places-menugnome-shell-extensions.gcampax.github.com.v54" ["extension-list@tu.berry"]="extension-listtu.berry.v30" ["user-theme@gnome-shell-extensions.gcampax.github.com"]="user-themegnome-shell-extensions.gcampax.github.com.v49" ["just-perfection-desktop@just-perfection"]="just-perfection-desktopjust-perfection.v21")
@@ -195,12 +195,8 @@ fi
   install_extensions
 
   rndColor=$(echo $(od -txC -An -N3 /dev/random | tr \  -) | sed 's/-//g')
-  a=$(echo $rndColor | cut -c 1-2 | tr '[:lower:]' '[:upper:]')
-  b=$(echo $rndColor | cut -c 3-4 | tr '[:lower:]' '[:upper:]')
-  c=$(echo $rndColor | cut -c 5-6 | tr '[:lower:]' '[:upper:]')
-  r=$(echo "ibase=16; $a" | bc)
-  g=$(echo "ibase=16; $b" | bc)
-  b=$(echo "ibase=16; $c" | bc)
+  a=$(echo $rndColor | cut -c 1-2 | tr '[:lower:]' '[:upper:]') b=$(echo $rndColor | cut -c 3-4 | tr '[:lower:]' '[:upper:]') c=$(echo $rndColor | cut -c 5-6 | tr '[:lower:]' '[:upper:]')
+  r=$(echo "ibase=16; $a" | bc) g=$(echo "ibase=16; $b" | bc) b=$(echo "ibase=16; $c" | bc)
   
   if [[ $r && $g && $b ]];
   then
@@ -214,12 +210,27 @@ fi
     $0 -r
   fi
 ;;
+-c)
+  lengthString=${#2}
+  if [[ $2 != "--help" && $2 == +([0-9a-fA-F]) && $lengthString == 6 ]];
+  then 
+    a=$(echo $2 | cut -c 1-2 | tr '[:lower:]' '[:upper:]') b=$(echo $2 | cut -c 3-4 | tr '[:lower:]' '[:upper:]') c=$(echo $2 | cut -c 5-6 | tr '[:lower:]' '[:upper:]')
+    r=$(echo "ibase=16; $a" | bc) g=$(echo "ibase=16; $b" | bc) b=$(echo "ibase=16; $c" | bc)
+    echo "generating new theme whit your color... #$2"
+    setup $2 $2
+    sed -i "s/_PRIMARY_COLOR_/rgba($r, $g, $b,/g" ./temp/gnome-shell/gnome-shell.css
+    moving $2
+    dconfig $2
+  else
+    echo -e "You have not entered a valid hexadecimal color code. You must enter a 6-digit hexadecimal number (without #), for example: B22222 \nhttps://www.w3schools.com/cssref/css_colors.asp"
+  fi
+;;
 -u)
   rm -Rf $ROUTE/waalahar_*
   notify-send "All Waalahar themes have been uninstalled." -i "gnome-logo-text-dark"
 ;;
 *)
-echo -e "\n||| Waalahar Gnome Shell Theme |||\n\nRun: ./install.sh -i default, all, random, or one of these colors: darkred, tomato, crimson, firebrick, orangered, darkolivegreen, forestgreen, darkcyan, dimgrey, midnightblue, royalblue, slateblue, seagreen, teal, or purple to install. Also you can use -u to uninstall all installed themes.\n"
+echo -e "\n||| Waalahar Gnome Shell Theme |||\n\nRun ./install.sh -i default, all, or one of these colors: darkred, tomato, crimson, firebrick, orangered, darkolivegreen, forestgreen, darkcyan, dimgrey, midnightblue, royalblue, slateblue, seagreen, teal, or purple to install themes with preseted colors.\n\nYou can use -r to generate a random color.\n\nIf you want to set a personal color use -c +hexadecimal color number (whitout #), for example: -c ff3c7a.\n\nUse -u to uninstall all installed themes.\n"
 exit 1
 ;;
 esac
