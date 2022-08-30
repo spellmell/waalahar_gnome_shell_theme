@@ -96,6 +96,7 @@ setup (){
   then
     if [[ ${2::1} == "#" ]]; 
     then
+      # preseted colors
       sed -i "s/_ACTIVE_TEXT_COLOR_BUTTON_/$2/g" ./temp/gnome-shell/gnome-shell.css
       sed -i "s/#ff6600/$2/g" ./temp/gnome-shell/assets/grad_bg_overview.svg
       sed -i "s/#ff6600/$2/g" ./temp/gnome-shell/assets/grad_bg_popups.svg
@@ -108,6 +109,7 @@ setup (){
       sed -i "s/#ff0000/$2/g" ./temp/gnome-shell/assets/grad_bg_button.svg
       # sed -i "s/#ff0000/$2/g" ./temp/gnome-shell/assets/grad_bg_button_hover.svg
       sed -i "s/#d45500/$2/g" ./temp/gnome-shell/assets/toggle-on-light.svg
+      sed -i "s/#d45500/$2/g" ./temp/gnome-shell/assets/checkbox.svg
     else
       # random colors
       sed -i "s/_ACTIVE_TEXT_COLOR_BUTTON_/\#$2/g" ./temp/gnome-shell/gnome-shell.css
@@ -122,8 +124,10 @@ setup (){
       sed -i "s/#ff0000/\#$2/g" ./temp/gnome-shell/assets/grad_bg_button.svg
       # sed -i "s/#ff0000/\#$2/g" ./temp/gnome-shell/assets/grad_bg_button_hover.svg
       sed -i "s/#d45500/\#$2/g" ./temp/gnome-shell/assets/toggle-on-light.svg
+      sed -i "s/#d45500/\#$2/g" ./temp/gnome-shell/assets/checkbox.svg
     fi
   else
+      # for default theme
     sed -i "s/_ACTIVE_TEXT_COLOR_BUTTON_/orangered/g" ./temp/gnome-shell/gnome-shell.css
     sed -i "s/#ff6600/\#1E1E1E/g" ./temp/gnome-shell/assets/grad_bg_panel.svg
     sed -i "s/#ff0000/\#1E1E1E/g" ./temp/gnome-shell/assets/grad_bg_panel.svg

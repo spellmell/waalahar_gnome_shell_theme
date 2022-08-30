@@ -135,6 +135,7 @@ stage {
   font-family: "Quicksand" !important;
   padding: 6px;
   font-weight: bold !important;
+  border: none !important;
   color: rgba(245, 222, 179, 1);
   background-color: _PRIMARY_COLOR_ 1); }
   .modal-dialog .modal-dialog-linked-button:ltr, .hotplug-notification-item:ltr, .notification-banner .notification-button:ltr {
@@ -142,11 +143,11 @@ stage {
   .modal-dialog .modal-dialog-linked-button:rtl, .hotplug-notification-item:rtl, .notification-banner .notification-button:rtl {
     margin-left: 1px; }
   .modal-dialog .modal-dialog-linked-button:insensitive, .hotplug-notification-item:insensitive, .notification-banner .notification-button:insensitive {
-    color: rgba(0, 0, 0, 0.3);
-    background-color: rgba(0, 0, 0, 0); }
+    color: rgba(245, 222, 179, 1);
+    background-color: _PRIMARY_COLOR_ 1); }
   .modal-dialog .modal-dialog-linked-button:focus, .hotplug-notification-item:focus, .notification-banner .notification-button:focus {
     color: rgba(245, 222, 179, 1);
-      background-color: rgba(44, 49, 60, 1);}
+    background-color: _PRIMARY_COLOR_ 1); }
     .modal-dialog .modal-dialog-linked-button:focus:hover, .hotplug-notification-item:focus:hover, .notification-banner .notification-button:focus:hover {
       color: _PRIMARY_COLOR_ 1); 
       background-color: rgba(245, 222, 179, 1);}
@@ -366,28 +367,28 @@ StEntry {
 
 .check-box StBin {
   margin-left: 60px;
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
   text-align: left;
-  border-radius: 3px;
+  border-radius: 72px;
   border: solid 1px _PRIMARY_COLOR_ 0.81);
   background-color: rgba(245, 222, 179, 1);
-  background-image: url("resource:///org/gnome/shell/theme/checkbox-off-light.svg"); }
+  background-image: url("assets/checkbox-off-light.svg"); 
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.36); }
 
-.check-box:focus StBin {
-  background-image: url("resource:///org/gnome/shell/theme/checkbox-off-focused-light.svg"); }
+/* .check-box:focus StBin {
+  background-image: url("assets/checkbox-off-focused-light.svg"); } */
 
 .check-box:checked StBin {
-  background-image: url("resource:///org/gnome/shell/theme/checkbox.svg"); }
+  background-image: url("assets/checkbox.svg"); }
 
-.check-box:focus:checked StBin {
-  background-image: url("resource:///org/gnome/shell/theme/checkbox-focused.svg"); }
+/* .check-box:focus:checked StBin {
+  background-image: url("assets/checkbox-focused.svg"); } */
 
 /* Switches */
 .toggle-switch {
   color: rgba(245, 222, 179, 1);
-  width: 70px;
-  height: 40px;
+  height: 36px;
   background-size: contain;
   background-image: url("assets/toggle-off-light.svg"); }
   .toggle-switch:checked {
