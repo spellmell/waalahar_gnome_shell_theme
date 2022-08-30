@@ -405,16 +405,16 @@ StScrollView.hfade {
   -st-hfade-offset: 72px;}
 
 StScrollBar {
-  padding: 3px;
+  padding: 1px;
   border-radius: 3px;}
   StScrollView StScrollBar {
-    min-width: 12px;
-    min-height: 12px;
-    margin: 6px 0 6px 18px;
+    min-width: 1px;
+    min-height: 1px;
+    margin: 6px 0 6px 6px;
     /* margin-left: 18px !important; */
     /* margin-bottom: 18px !important; */
     border-radius: 3px;
-    background-color: _PRIMARY_COLOR_ 1);  
+    background-color: _PRIMARY_COLOR_ 0.18);  
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.18);
  }
   StScrollBar StBin#trough {
@@ -644,7 +644,7 @@ StScrollBar {
   background-color: rgba(30, 30, 30, 0.0) !important;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.0) !important;
 }
-  .datemenu-today-button:insensitive {
+  /* .datemenu-today-button:insensitive {
     color: rgba(245, 222, 179, 1);
     background-color: rgba(30, 30, 30, 0.81);}
   .datemenu-today-button:focus {
@@ -662,7 +662,7 @@ StScrollBar {
     background-color: rgba(44, 49, 60, 1) !important;}
   .datemenu-today-button:active {
     color: rgba(245, 222, 179, 1);
-    background-color: rgba(44, 49, 60, 1);}
+    background-color: rgba(44, 49, 60, 1);} */
 
 /* Calendar */
 .calendar {
@@ -992,8 +992,7 @@ StScrollBar {
   max-width: 16em;
   border-radius: 3px;
   margin: 3px;
-  /* fix scroll in large list of alerts */
-  margin-right: 18px; 
+  margin-right: 0px; /* fix scroll in large list of alerts */
   padding: 6px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.18);
   color: rgba(245, 222, 179, 1);
