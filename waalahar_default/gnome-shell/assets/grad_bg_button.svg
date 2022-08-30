@@ -3,8 +3,8 @@
 
 <svg
    width="600"
-   height="36"
-   viewBox="0 0 158.75 9.5249999"
+   height="48"
+   viewBox="0 0 158.75 12.7"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
@@ -26,7 +26,7 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="0.47916667"
-     inkscape:cx="-173.21739"
+     inkscape:cx="-591.65217"
      inkscape:cy="-245.21739"
      inkscape:window-width="1920"
      inkscape:window-height="1000"
@@ -35,24 +35,24 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
     <sodipodi:guide
-       position="0,9.525"
-       orientation="0,2560"
-       id="guide654"
+       position="0,12.7"
+       orientation="0,600"
+       id="guide139"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="677.33333,9.525"
-       orientation="36,0"
-       id="guide656"
+       position="158.75,12.7"
+       orientation="48,0"
+       id="guide141"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="677.33333,0"
-       orientation="0,-2560"
-       id="guide658"
+       position="158.75,0"
+       orientation="0,-600"
+       id="guide143"
        inkscape:locked="false" />
     <sodipodi:guide
        position="0,0"
-       orientation="-36,0"
-       id="guide660"
+       orientation="-48,0"
+       id="guide145"
        inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
@@ -223,7 +223,7 @@
        style="display:inline;opacity:0.36;mix-blend-mode:darken;fill:#ffffff;fill-opacity:0.721569;stroke:#4d4d4d;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke-dasharray:none;paint-order:stroke markers fill"
        id="path321"
        cx="79.375"
-       cy="2.796602"
+       cy="4.7625003"
        rx="319.504"
        ry="5.1408982" />
   </g>
