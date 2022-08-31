@@ -718,7 +718,7 @@ StScrollBar {
     width: 36px;
     margin: 6px;
     border-radius: 3px;
-    border: solid 1px rgba(245, 222, 179, 0.18);
+    border: solid 1px _PRIMARY_COLOR_ 1);
     color: rgba(245, 222, 179, 1); 
     background-color: rgba(30, 30, 30, 1); 
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.36);}
@@ -755,10 +755,10 @@ StScrollBar {
         border-radius: 3px;
         background-color: rgba(44, 49, 60, 1);}
     .calendar .calendar-day-base.calendar-day-heading {
-      color: rgba(245, 222, 179, 1);
+      height: 18px !important;
       padding-top: 6px;
-      height: 16px !important;
-      font-weight: 400;}
+      font-weight: 700;
+      color: rgba(245, 222, 179, 1);}
   .calendar .calendar-nonwork-day {
     color: _PRIMARY_COLOR_ 1);}
   .calendar .calendar-other-month-day {
@@ -782,7 +782,7 @@ StScrollBar {
         background-color: _PRIMARY_COLOR_ 1);
         color: inherit;}
   .calendar .calendar-day-with-events {
-    background-image: url("resource:///org/gnome/shell/theme/calendar-today-light.svg");
+    background-image: url('assets/checkbox.svg');
     background-size: contain;}
   .calendar .calendar-week-number {
     font-size: 8pt;
@@ -1849,9 +1849,9 @@ StScrollBar {
     background-color: rgba(245, 222, 179, 1);}
 
 .workspace-background { /* areas de trabajo */
-  padding: 0px;
+  padding: 10px; /* "fix" border in workspace-background */
   border-radius: 20px;
-  background-color: _PRIMARY_COLOR_ 0.81);
+  background-color: _PRIMARY_COLOR_ 0.36);
   border: solid 1px _PRIMARY_COLOR_ 0.81);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.36);
  }
@@ -2197,8 +2197,8 @@ StScrollBar {
   border-radius: 60px;
   border: solid 4px _PRIMARY_COLOR_ 0.36);
   margin-bottom: 0px;
-  /* corte */
-  background-color: _PRIMARY_COLOR_ 1);}
+  background-color: _PRIMARY_COLOR_ 1);
+  background-image: url("assets/checkbox.svg");}
 
 .rename-folder-popup .rename-folder-popup-item {
   spacing: 6px;}
@@ -2244,15 +2244,16 @@ StScrollBar {
 
 /* Workspace pager */
 .workspace-thumbnails {
-  visible-width: 36px;
+  visible-width: 30px;
   spacing: 18px;
   padding: 6px;}
   .workspace-thumbnails .workspace-thumbnail { /* miniaturas de areas de trabajo switcher */
     color: rgba(245, 222, 179, 1);
+    border: solid 1px _PRIMARY_COLOR_ 0.81);
     background-color: rgba(44, 49, 60, 0.72); 
-    border-radius: 3px;}
+    border-radius: 3px !important;}
   .workspace-thumbnails .placeholder {
-    background-image: url("resource:///org/gnome/shell/theme/workspace-placeholder.svg");
+    /* background-image: url("resource:///org/gnome/shell/theme/workspace-placeholder.svg"); */
     background-size:cover;
     width: 18px;}
 

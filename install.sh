@@ -27,43 +27,46 @@
 # https://extensions.gnome.org/extension-data/user-themegnome-shell-extensions.gcampax.github.com.v49.shell-extension.zip
 
 THEME=waalahar_default
-ROUTE=~/.themes
-FONTROUTE=~/.local/share/fonts
+ROUTE=$HOME/.themes
+
 FONTSNAMES=("Lobster" "Cairo")
 EXTWL="https://extensions.gnome.org/extension-data"
+
 declare -A EXTUL
 EXTUL=(["apps-menu@gnome-shell-extensions.gcampax.github.com"]="apps-menugnome-shell-extensions.gcampax.github.com.v51" ["places-menu@gnome-shell-extensions.gcampax.github.com"]="places-menugnome-shell-extensions.gcampax.github.com.v54" ["extension-list@tu.berry"]="extension-listtu.berry.v30" ["user-theme@gnome-shell-extensions.gcampax.github.com"]="user-themegnome-shell-extensions.gcampax.github.com.v49" ["just-perfection-desktop@just-perfection"]="just-perfection-desktopjust-perfection.v21")
+
 # colors
 declare -A COLORS
 COLORS=([default]="rgba(33, 37, 43," [darkred]="rgba(139, 0, 0," [tomato]="rgba(255, 99, 71," [crimson]="rgba(220, 20, 60," [firebrick]="rgba(178, 34, 34," [orangered]="rgba(255, 69, 0," [darkolivegreen]="rgba(85, 107, 47," [forestgreen]="rgba(34, 139, 34," [darkcyan]="rgba(0, 139, 139," [dimgrey]="rgba(105, 105, 105," [midnightblue]="rgba(25, 25, 112," [royalblue]="rgba(65, 105, 225," [slateblue]="rgba(106, 90, 205," [seagreen]="rgba(46, 139, 87," [teal]="rgba(0, 128, 128," [purple]="rgba(128, 0, 128,")
 declare -A COLORSHEX
 COLORSHEX=([default]="#21252B" [darkred]="#8B0000" [tomato]="#FF6347" [crimson]="#DC143C" [firebrick]="#B22222" [orangered]="#FF4500" [darkolivegreen]="#556B2F" [forestgreen]="#228B22" [darkcyan]="#008B8B" [dimgrey]="#696969" [midnightblue]="#191970" [royalblue]="#4169E1" [slateblue]="#6A5ACD" [seagreen]="#2E8B57" [teal]="#008080" [purple]="#800080")
 
+# fonts instalation
 declare -F install_fonts
 install_fonts (){
-  # fonts instalation
   installFonts=true
+  fontRoute=$HOME/.local/share/fonts
   if [ $installFonts == true ];
   then
     for FONTNAME in ${!FONTSNAMES[@]};
     do
-      if [[ ! -d "/usr/share/fonts/${FONTSNAMES[FONTNAME]}" && ! -d "$FONTROUTE/${FONTSNAMES[FONTNAME]}" ]];
+      if [[ ! -d "/usr/share/fonts/${FONTSNAMES[FONTNAME]}" && ! -d "$fontRoute/${FONTSNAMES[FONTNAME]}" ]];
       then
-        if [ ! -d $FONTROUTE ];
+        if [ ! -d $fontRoute ];
         then
-          mkdir -p $FONTROUTE
+          mkdir -p $fontRoute
         fi
         wget -O ${FONTSNAMES[FONTNAME]}.zip "https://fonts.google.com/download?family=${FONTSNAMES[FONTNAME]}"
-        unzip -o -d $FONTROUTE/${FONTSNAMES[FONTNAME]} ${FONTSNAMES[FONTNAME]}.zip
+        unzip -o -d $fontRoute/${FONTSNAMES[FONTNAME]} ${FONTSNAMES[FONTNAME]}.zip
         rm ./${FONTSNAMES[FONTNAME]}.zip
       fi
     done
   fi
 }
 
+# extensions installation
 declare -F install_extensions
 install_extensions (){
-  # extensions installation
   installExtensions=true
   extensionsRoute=$HOME/.local/share/gnome-shell/extensions
   if [ $installExtensions == true ];
